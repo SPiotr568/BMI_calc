@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>BMI app</h1>
+    <p class="lead">BMI application to calculate your daily caloric requirement.</p>
+    <p><a href="{{ url_for('calculate') }}" class="btn btn-primary btn-large">Calculate BMI &raquo;</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Body_mass_index" class="btn btn-primary btn-large">Learn more about BMI &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Basal metabolic rate</h2>
+        <p>
+            The rate of energy expenditure per unit time by endothermic animals at rest
+        </p>
+        <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Basal_metabolic_rate">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>World Health Organization</h2>
+        <p>Find more information and recomendations about your health.</p>
+        <p><a class="btn btn-default" href="https://www.who.int/">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
